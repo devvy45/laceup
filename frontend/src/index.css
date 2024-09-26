@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden */
+}
+
+.sneaker-card-container {
+  transition: background-color 1s linear;
+}
+
+.sneaker-card-image {
+  transition: all 0.2s linear;
+}
+
+.sneaker-card-container:hover {
+  background: linear-gradient(#FE702D, #AB2F03);
+  color: white;
+  .sneaker-card-image {
+    transform: rotate(0deg);
+    scale: 1.1;
+  }
+
+  .sneaker-card-anchor {
+    transition: all 0.2s linear;
+  }
+}
